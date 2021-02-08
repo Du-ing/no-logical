@@ -1,0 +1,74 @@
+<!--pages/jumpto/index.wxml-->
+
+<!-- 视频资源 -->
+<view class="page">
+<image src="{{showimg}}" objectFit='fill' class="im"></image>
+  <view class='head'>
+    <!-- 头像 -->
+    <image src='{{avatarUrl}}' data-userid='{{item.userid}}' class='head_img' catchtap=''></image>
+     <view class='jia'>{{nickname}}</view> 
+     <image src="https://duing.site/saveFiles/images/foc1.png" class="foc"></image>
+  </view>
+  <view class="head_font">
+  <view class="head_con">#乡村美景#邀请大家来四川看丁真哦~邀请大家来四川看丁真哦~</view>
+  </view>
+  <view class="head_time">
+  2021-4-9  20:00
+  </view>
+  <view class="head_pic">
+    <view>
+      <image src="/images/175.png" class="letter"></image>
+      <view style="font-size:10px;text-align: center">私信</view>
+    </view>
+    <view>
+      <image src="/images/178.png" class="share"></image>
+      <view style="font-size:10px;text-align: right">分享</view>
+    </view>
+    <view>
+      <image src="/images/176.png" class="comm" catchtap='showModal' data-vid="{{item.vid}}" data-img_url='{{item.wapimg}}'></image>
+      <view style="font-size:10px;text-align:right">评论()</view>
+    </view>
+    <view>
+      <image src="/images/177.png" class="loved"></image>
+      <view style="font-size:10px;text-align: right">点赞()</view>
+    </view>
+  </view>
+    <!-- 评论数 -->
+
+<!-- 隐藏评论窗口按钮 -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!-- 评论遍历 -->
+  <view class="commentTitle">
+    <view class="comm-de"></view>
+    <text class="comm-ti">评 论({{commentList.length}})</text>
+    <image class='down' src='/images/u452.svg' bindtap='hideModal'></image>   
+  </view>
+  <view class="divLine"></view>
+  <scroll-view scroll-y='true' style='height:500rpx'>
+    <block wx:for='{{commentList}}' wx:key='item.vid'>
+      <view class="commentContent">
+        <image src="https://duing.site/saveFiles/images/nannan.jpg" class="comm-pic"></image>
+        <view class="contentLeft">
+          <view>{{item.username}}</view>
+          <view class="Comment">
+          <view>{{item.ComContent}}</view>
+        </view>
+        <view>{{item.ComTime}}</view>
+        </view>
+        <view class="clear"></view>
+        <view class="com-love">
+        <image src="https://duing.site/saveFiles/images/1180.png" class="com-love-pic"></image>
+        <view class="com-love-text">5.5w</view>
+      </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="commentInput">
+    <input placeholder="请填写评论内容 " class="input_box" bindblur='getComment' />
+    <button class="comment_btn" bindtap='bindContent' data-vid='{{vid}}'>
+      <text class='comment_txt' style="text-align=center">发送</text>
+    </button>
+  </view>
+</view>
+</view>
+

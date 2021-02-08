@@ -1,0 +1,48 @@
+<form bindsubmit="submitdata">
+<view class="container1">
+  <view class="title">
+    <input type="text" name="title" placeholder="请输入您的标题" />
+  </view>
+
+  <view class="imgs">
+    <view class="img" wx:for="{{imgs}}" wx:key="index">
+      <image src="{{item}}" mode="scaleToFill"></image>
+    </view>
+    <view class="img" bindtap="chooseImg" wx:if="{{imgNum < 9 ? true : false}}">
+      <image class="img-add" src="https://duing.site/saveFiles/images/add.png" mode="scaleToFill"></image>
+    </view>
+  </view>
+
+  <view class="choose">
+    <view class="choose-item" bindtap="choosePlace">
+      <!-- <image src="/images/site.png"></image> -->
+      {{place == null ? "求助位置" : place}}
+      <image src="https://duing.site/saveFiles/images/choose.png" mode="scaleToFill"></image>
+    </view>
+    <picker bindchange="chooseType" name="type" range="{{helpTypes}}">
+      <view class="choose-item">
+        <!-- <image src="/images/type.png"></image> -->
+        {{type == null ? "求助类型" : type}}
+        <image src="https://duing.site/saveFiles/images/choose.png" mode="scaleToFill"></image>
+      </view>
+    </picker>
+    <picker bindchange="chooseDate" name="time" mode="date">
+      <view class="choose-item" bindtap="">
+        <!-- <image src="/images/date.png"></image> -->
+        {{date == null ? "时间限制" : date}}
+        <image src="https://duing.site/saveFiles/images/choose.png" mode="scaleToFill"></image>
+      </view>
+    </picker>
+    <picker bindchange="chooseMoney" name="reward" range="{{moneyList}}">
+      <view class="choose-item" bindtap="">
+        <!-- <image src="/images/date.png"></image> -->
+        {{money == null ? "打赏" : money}}
+        <image src="https://duing.site/saveFiles/images/choose.png" mode="scaleToFill"></image>
+      </view>
+    </picker>
+  </view>
+
+  <textarea class="need" placeholder="您可以详细描述您的需求 ......" name="main" bindinput="inputDetail"></textarea>
+</view>
+<button class="btn" type="primary" formType="submit" >发表{{imgNum}}/9</button>
+</form>

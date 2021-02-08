@@ -1,0 +1,28 @@
+<!--历史消息-->
+<view>
+<view class="search-bar">
+    <view class="search-bar__form">
+      <!-- 搜索框 -->
+      <view class="search-bar__box">
+        <icon class="icon-search_in-box" color="rgb(145, 145, 145)" type="search" size="28"></icon>
+        <input type="text" class="search-bar__input" placeholder="输入好友名称" />
+      </view>
+    </view>
+    <!-- 搜索按钮,调用搜索查询方法 -->
+    <view class="search-bar__cancel-btn" bindtap='方法名a'>搜索</view>
+  </view>
+  <!-- 消息列表 -->
+<view wx:for="{{meslist}}" bindtap="chat">
+    <!-- 头像 -->
+    <view class="mbox">
+      <view class="mphoto"></view>
+    <!-- 名字和消息 -->
+      <view class="mcbox">
+        <view class="mname">{{item.name}}</view>
+        <view class="mess">{{item.mess}}</view>
+      </view>
+      <!-- 时间 -->
+      <view class="mtime">{{item.time}}</view>
+    </view>
+</view>
+</view>

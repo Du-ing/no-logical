@@ -1,0 +1,49 @@
+/* pages/chat/chat.wxss */
+page{
+  height: 100%;
+}
+.chat{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  height: 100%;
+  background-color: rgb(247, 247, 247);
+
+}
+.chat-main{
+ flex:12;
+}
+.chat-border{
+  height: 104rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(247, 247, 247);
+  border: 1px rgb(229, 229, 229) solid;
+}
+.input-b{
+  height: 70%;
+  line-height: 70rpx;
+  font-size: 35rpx;
+  width:490rpx;
+  margin-left: 20rpx;
+  margin-top: 14rpx;
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 5rpx;
+  border-radius: 10rpx;
+}
+.plus-main{
+  height: 470rpx;
+}
+.plus-deta{
+  height: 340rpx;
+  margin:65rpx 0;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: rgb(139, 139, 139);
+  font-size: 21rpx;
+  letter-spacing: 4rpx;
+}
+

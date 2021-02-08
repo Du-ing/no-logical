@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<!--头部-->
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='/images/logo.jpg'></image>
+        </view>
+  
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+  
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+  
+<view wx:else>
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+                    <input bindtap="search" type="text" class="weui-search-bar__input" placeholder="大家都在搜：家乡美食"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="top">
+  <view class="top_tabbar1">推 荐</view>
+  <view class="top_tabbar2"  bindtap="goto_counter">关 注</view>
+  <view class="top_tabbar">风 景</view>
+  <view class="top_tabbar">美 食</view>
+  <view class="top_tabbar">活 动</view>
+  <view class="top_tabbar">文 化</view>
+  <view class="top_tabbar">其 他</view>
+</view>
+<view class="main">
+  <view wx:for="{{columnsleft}}" class="column-left">
+    <view wx:for="{{item}}" class="column_item" wx:for-item="pics"  wx:key = 'index' wx:for-index="bindex" >
+      <image catchtap="show" src="{{pics.pic}}" class="column_pic" mode="widthFix" data-bindex= '{{bindex}}' id="{{item.index}}"></image>
+      <view class="list-loc" style="opacity:{{0.6}}">
+      <image  src="https://duing.site/saveFiles/images/180.png" class="loc11"></image>
+      <view class="loc_text">{{pics.loctext}}</view>
+    </view>
+    <view class="list-main">
+        <view class="list-text">
+      {{pics.content}}
+    </view>
+    <view class="list-time" style="color:{{timeColor}}">{{pics.time}}</view>
+    <view class="list-user">
+      <image class="motou" src="{{avatarUrl}}"></image>
+      <text class="authname">{{nickname}}</text>
+    </view>
+    <view class="list-love">
+      <image src="https://duing.site/saveFiles/images/love.png" class="love-img" bindtap="addlove"></image>
+      <view >{{pics.love}}</view>
+    </view>
+  </view>
+    </view>
+  </view>
+  <view wx:for="{{columnsright}}" class="column-right">
+    <view wx:for="{{item}}" class="column_item" wx:for-item="pics"  wx:key = 'index1' wx:for-index="bindex1" >
+      <image catchtap="show" src="{{pics.pic}}" class="column_pic" mode="widthFix" data-bindex1= '{{bindex1}}' id="{{item.index}}"></image>
+      <view class="list-loc" style="opacity:{{0.6}}">
+      <image  src="https://duing.site/saveFiles/images/180.png" class="loc11"></image>
+      <view class="loc_text">{{pics.loctext}}</view>
+    </view>
+    <view class="list-main">
+        <view class="list-text">
+      {{pics.content}}
+    </view>
+    <view class="list-time" style="color:{{timeColor}}">{{pics.time}}</view>
+    <view class="list-user">
+      <image class="motou" src="{{avatarUrl}}"></image>
+      <text class="authname">{{nickname}}</text>
+    </view>
+    <view class="list-love">
+      <image src="https://duing.site/saveFiles/images/love.png" class="love-img" bindtap="addlove"></image>
+      <view >{{pics.love}}</view>
+    </view>
+  </view>
+    </view>
+  </view>
+</view>
+<view class="hide">
+  <image wx:for="{{tempPics}}" src="{{item.pic}}" bindload="loadPic" binderror="loadPicError" data-index="{{index}}" />
+</view>
+<view class="over" bindtap='adddetial'>
+    <image class="overtext1" src="https://duing.site/saveFiles/images/people.png">
+    </image>
+    <view class="overtext3">求助</view>
+</view>
+<view class="over1" bindtap='adddetial1'>
+  <image class="overtext" src="https://duing.site/saveFiles/images/fabiao.png" mode="widthFix">
+   </image>
+   <view class="overtext3">发表</view>
+</view>
+</view>

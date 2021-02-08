@@ -1,0 +1,21 @@
+<!--pages/search/index.wxml-->
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+                    <input bindtap="search" type="text" class="weui-search-bar__input" placeholder="大家都在搜：家乡美食"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="history_title">
+<view class="history">历史搜索</view>
+<icon class="icon-box-img" type="cancel" size="15"></icon>
+</view>
+<view class="history_content">
+  <text wx:for="{{alltext}}" class="ebox">{{item.message}}</text>
+</view>

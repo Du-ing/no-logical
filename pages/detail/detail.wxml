@@ -1,0 +1,48 @@
+<!--先静后动，先样式再数据-->
+<view class="container3">
+
+
+<view class="author-date">
+<image class="avatar" src="{{aneedData.headimg}}"></image>
+<view class="jubao">
+                 <image  src="https://duing.site/saveFiles/images/ju.png" style="width:20px; height:20px"></image>
+               <text>  举报</text>
+                 </view>
+<text class="author">{{aneedData.username}}</text>
+<view class="sixin">
+                 <image  src='https://duing.site/saveFiles/images/chat.png' style="width:15px; height:15px"></image>
+                 <text decode="{{true}}">&nbsp;私信</text>
+                 </view>
+<view class="didian">
+                 <image  src='https://duing.site/saveFiles/images/locat.png' style="width:15px; height:15px"> </image>                
+                 <text decode="{{true}}">&nbsp;{{aneedData.site}}</text></view>
+<view class="rongyu">
+   <image  src="https://duing.site/saveFiles/images/mark.png" style="width:15px; height:17px"> </image>
+   <text decode="{{true}}">&nbsp;荣誉积分：{{aneedData.reward}}</text>
+                 </view>
+<text class="date">{{aneedData.startime}}</text>
+</view>
+<text class="title">{{aneedData.title}}
+</text>
+<view class="leibie">
+ <text class="mingcheng">求助类别：</text>
+ <text class="shuju">{{aneedData.type}}</text>
+</view>
+<view class='sucai' ><text class="mingcheng">图片素材：</text> 
+ <view  wx:for="{{img}}" class='tupian'>
+ <image class="suolue"  src='{{item}}' style="width:30px; height:30px " bindtap="preview" data-src="{{item}}"></image>
+ </view>
+</view>
+<view class="jiezhi">
+ <text class="mingcheng">时间限制：</text>
+ <text class="shuju">{{aneedData.endtime}} 前完成</text>
+</view>
+<view class='biaotidet'>
+  <text class="mingcheng">求助详情：</text>
+  <text class="shuju">{{aneedData.content}}</text>
+</view>
+<button class='butt' bindtap="swithtotask" hover-class='but' hover-stay-time="1000" >帮助完成</button>
+<toast hidden="{{status}}" duration="3000" bindchange="toastHide">
+       接取任务成功
+</toast>
+</view>

@@ -1,0 +1,253 @@
+/**index.wxss**/
+
+.loadMore {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 16rpx 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 20rpx;
+  top: 14rpx;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 10rpx;
+  background: rgb(247, 247, 248);
+  border: 1rpx solid rgb(247, 247, 248);
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+}
+.top{
+  display: flex;
+  font-family: "微软雅黑"、Arial、Verdana、"Times New Roman";
+}
+.top_tabbar{
+  font-size: 24rpx;
+  margin-left: 50rpx;
+  font-weight: 700;
+  border-width: 0 0 8rpx 0;
+  border-color: white;
+  border-style: solid;
+  border-radius: 4rpx;
+  font-family: "微软雅黑"、Arial、Verdana、"Times New Roman";
+}
+.top_tabbar2{
+  font-size: 24rpx;
+  margin-left: 50rpx;
+  font-weight: 700;
+  border-width: 0 0 8rpx 0;
+  border-color: white;
+  border-style: solid;
+  border-radius: 4rpx;
+  font-family: "微软雅黑"、Arial、Verdana、"Times New Roman";
+}
+.top_tabbar1{
+  font-size: 28rpx;
+  margin-left: 34rpx;
+  padding-bottom: 8rpx;
+  font-weight: 700;
+  border-width: 0 0 8rpx 0;
+  border-color: rgb(252, 191, 80);
+  border-style: solid;
+  border-radius: 4rpx;
+}
+
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  background-color:rgb(247, 247, 248) ;
+}
+
+.column-left {
+  width: 50%;
+}
+.column-right{
+  width: 50%;
+}
+
+.column_item {
+  position: relative;
+  width: 350rpx;
+  background: #fff;
+  margin: 30rpx auto;
+}
+
+.column_pic {
+  display: block;
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.hide {
+  display: none;
+}
+.list-main{
+  position: relative;
+  width: 100%;
+  height: 160rpx;
+}
+.list-text{
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  white-space: pre-line;
+}
+.list-time{
+  font-size:14rpx;
+  margin-left: 20rpx;
+}
+.list-loc{
+  position: absolute;
+  height: 34rpx;
+  width:100%;
+  background-color: white;
+  bottom: 160rpx;
+}
+.list-user{
+  position: absolute;
+  height: 40rpx;
+  left: 12rpx;
+  bottom: 28rpx;
+  width: 100%;
+  display: flex;
+}
+.loc11{
+  position: absolute;
+  right: 80rpx;
+  top: 6rpx;
+  width: 14rpx;
+  height: 20rpx;
+  display: inline-block;
+  /*bottom: 184px;
+  left: 203px;*/
+  border-radius: 50%;
+}
+.loc_text{
+  position: absolute;
+  top: 4rpx;
+  right: 10rpx;
+  font-size: 20rpx;
+}
+.motou{
+  border-radius: 50%;
+  display: inline-block;
+  height: 60rpx;
+  width: 60rpx;
+}
+.authname{
+  font-size: 18rpx;
+  margin-top: 20rpx;
+  margin-left: 6rpx;
+  font-weight: 580;
+}
+.list-love{
+  position: absolute;
+  display: flex;
+  right: 10rpx;
+  bottom: 20rpx;
+  font-size: 20rpx;
+}
+.love-img{
+  height: 26rpx;
+  width: 30rpx;
+}
+.over{
+  position: fixed;
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 150rpx;
+right: 20rpx;
+}
+.over1{
+  position: fixed;
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 50rpx;
+right: 20rpx;
+}
+
+.overtext1{
+  margin-top: -4rpx;
+  margin-left: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.overtext{
+  margin-top: -4rpx;
+  margin-left:6rpx;
+  width: 58rpx;
+  height: 58rpx;
+}
+.overtext3{
+  font-size: 16rpx;
+  margin-top: -10rpx;
+  margin-left: 18rpx;
+}
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+
+
+

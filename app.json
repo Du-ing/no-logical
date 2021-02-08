@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/pagemy/index",
+    "pages/jumpto/index",
+    "pages/search/index",
+    "pages/help/index",
+    "pages/pagemy/login/adddetail",
+    "pages/pagemy/mytask/mytask",
+    "pages/detail/detail",
+    "pages/pagemy/task/task",
+    "pages/report/index1",
+    "pages/askhelp/help"
+
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乡炬",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/f2.png",
+        "selectedIconPath": "images/f.jpg"
+      },
+      {
+        "pagePath": "pages/help/index",
+        "text": "互助",
+        "iconPath": "images/m.jpg",
+        "selectedIconPath": "images/m2.jpg"
+      },
+      {
+        "pagePath": "pages/pagemy/index",
+        "text": "我",
+        "iconPath": "images/l.jpg",
+        "selectedIconPath": "images/l2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

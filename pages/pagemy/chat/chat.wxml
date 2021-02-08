@@ -1,0 +1,25 @@
+<!--聊天主页面-->
+<view class="chat">
+<!-- 聊天区 -->
+ <view class="chat-main"></view>
+ <!-- 输入区 -->
+ <view class="chat-border">
+     <image class="listen" bindtap="bindsound" src="https://duing.site/saveFiles/images/sound.png" style="width:52rpx;height:52rpx;margin-left:20rpx;margin-top:25rpx"></image>
+     <input type="text" class="input-b"  ></input>
+     <image class="emoji" bindtap="bindemoji" src="https://duing.site/saveFiles/images/emoji.png" style="width:52rpx;height:50rpx;margin-left:20rpx;margin-top:25rpx"></image>
+     <image class="more" bindtap="bindplus" src="https://duing.site/saveFiles/images/plus.png" style="width:52rpx;height:52rpx;margin-left:20rpx;margin-top:25rpx"></image>
+  </view>
+  <!-- 聊天点击加号出现的图标 -->
+  <view class="plus-main" wx:if="{{ifplus}}">
+    <view class="plus-deta">
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/album.png' style="width:100rpx;height:100rpx;"></image>相册</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/cam.png' style="width:100rpx;height:100rpx;"></image>拍摄</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/video.png' style="width:100rpx;height:100rpx;"></image>视频通话</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/locata.png' style="width:100rpx;height:100rpx;"></image>位置</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/redbag.png' style="width:100rpx;height:100rpx;"></image>红包</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/money.png' style="width:100rpx;height:100rpx;"></image>转账</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/voice.png' style="width:100rpx;height:100rpx;"></image>语音输入</view>
+      <view style="width:100rpx;height:130rpx;margin-left:70rpx;display:flex;flex-direction:column;align-items:center;"><image src='https://duing.site/saveFiles/images/colect.png' style="width:100rpx;height:100rpx;"></image>我的收藏</view>
+    </view>
+  </view>
+</view>

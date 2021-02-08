@@ -1,0 +1,212 @@
+.container3 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  border: 1rpx  #666 solid;
+ }
+ /*.hide{
+  opacity: 0;
+ }*/
+ .author-date {
+   position: absolute;
+   left:10rpx;
+
+  flex-direction: row;
+  margin-left: 20rpx;
+ 
+ }
+ .jubao{
+  width: 124rpx;
+  position: absolute;
+  top:48rpx;
+  left:470rpx;
+  font-size: 27rpx;
+  color:  #070707;
+  vertical-align: middle;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 6rpx;
+ }
+  
+ .avatar {
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  vertical-align: middle;
+  top:50rpx;
+  left: 10rpx;
+  
+ }
+  
+ .author {
+
+  font-size: 35rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #000000;
+  width:240rpx;
+  position: absolute;
+  top:50rpx;
+  left:110rpx;
+  letter-spacing: 5rpx;
+ }
+.sixin{
+  width: 120rpx;
+  position: absolute;
+  top:52rpx;
+  left:360rpx;
+  font-size: 27rpx;
+  color:  #070707;
+  vertical-align: middle;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 6rpx;
+}
+.didian{
+  font-size: 23rpx;
+  width: 560rpx;
+  position: absolute;
+  top:110rpx;
+  left:360rpx;
+ 
+  color:  #070707;
+  vertical-align: middle;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  
+}
+.rongyu{
+  width: 300rpx;
+  position: absolute;
+  top:150rpx;
+  left:360rpx;
+  font-size: 23rpx;
+  color: #070707;
+  vertical-align: middle;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  letter-spacing: 2rpx;
+}
+ .date {
+  
+  font-size: 24rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color:  #070707;
+  width: 240rpx;
+  position: absolute;
+  top:110rpx;
+  left:110rpx;
+ }
+  
+ .title {
+  display: flex;
+  justify-content: center;
+   position: absolute;
+   left: 136rpx;
+   top: 180rpx;
+   height:100rpx;
+   width:400rpx;
+  margin-left: 40rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  margin-top: 25rpx;
+  margin-right: 15rpx;
+  letter-spacing:4rpx;
+  color: #4b556c;
+ }
+  .biaotidet{
+   
+  margin-top: 30rpx;
+  margin-left: 16rpx;
+   position: absolute;
+   top:564rpx;
+   left: 29.2rpx;
+   height:240rpx;
+   width: 660rpx;
+   border-bottom:2rpx #e5e5e5 solid;
+   letter-spacing: 0rpx;
+  }
+ .leibie{
+  left: 29.2rpx;
+  line-height:80rpx;
+   margin: 16rpx;
+  position: absolute;
+  top:304rpx;
+  height:80rpx;
+  width: 660rpx;
+  border-bottom:2rpx #e5e5e5 solid;
+  border-top:2rpx #e5e5e5 solid;
+  
+ }
+ .tupain{
+  left: 29.2rpx;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  height:100rpx;
+ }
+ .sucai{
+  left: 29.2rpx;
+  margin: 16rpx;
+ position: absolute;
+ top:384rpx;
+ height:100rpx;
+ width: 660rpx;
+ border-bottom:2rpx #e5e5e5 solid;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ }
+ .jiezhi{
+  left: 29.2rpx;
+  line-height:80rpx;
+  margin: 16rpx;
+ position: absolute;
+ top:484rpx;
+ height:80rpx;
+ width: 660rpx;
+ border-bottom:2rpx #e5e5e5 solid;
+ }
+ .butt{
+   border-radius:30rpx;
+   background-color: #FBB871;
+   font-size: 40rpx;
+   color:#FFFEFD;
+   position: absolute;
+   bottom:120rpx;
+   left:191.2rpx;
+   width:330rpx;
+   height:110rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 6rpx;
+ }
+ .suolue{margin-right: 14rpx;}
+ .mingcheng{
+   color: hsl(0, 0%, 0%);
+ }
+ .shuju{
+   color: #726e6e;
+ }
+ .but {
+  opacity: 0.9;
+  background: hsl(31, 97%, 58%);
+  transform: scale(0.95, 0.95);
+}

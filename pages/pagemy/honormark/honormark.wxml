@@ -1,0 +1,7 @@
+<!--荣耀积分页面-->
+<view wx:for="{{marklist}}">
+  <view class="mbox">
+    <view class="mtext">完成了任务，荣誉积分+{{item.mark}}</view>
+    <view class="mdate">{{item.date}}</view>
+  </view>
+</view>

@@ -1,0 +1,79 @@
+<!-- 任务详情页面 -->
+<view>
+  <!-- 第一框内容 -->
+  <view class="box1">
+    <view class="box1-1">
+      <image src="{{headimg}}" style="height:100%;width:100%"></image>
+    </view>
+    <view class="box1-2">
+      <view class="bname">{{nickname}}
+        <image src="https://duing.site/saveFiles/images/chat.png" style="height:15px;width:18px;margin-left:20rpx"></image>
+        <view style="color:rgb(128,128,128)">私信</view></view>
+      <view class="boxq">
+        <view>任务ID：{{taskinner.helpid}}</view>
+        <view style="margin-top:15rpx">
+          <image src="https://duing.site/saveFiles/images/locat.png" style="width:20rpx;height:22rpx;margin-right:10rpx"></image>
+          <text space="emsp" style="color:rgb(128, 128, 128);margin-top:23rpx">{{taskinner.site}} {{taskinner.startime}}</text></view>
+          <view style="color:rgb(128, 128, 128);margin-top:15rpx">
+            <image src="https://duing.site/saveFiles/images/mark.png" style="width:22rpx;height:26rpx;margin-right:7rpx"></image>荣誉积分: {{taskinner.reward}}</view>
+      </view>
+      <view class="btitle">{{taskinner.title}}</view>
+    </view>
+    <image src="https://duing.site/saveFiles/images/ju.png" style="width:28px;height:25px;margin-top:22px;margin-left:-10px"></image>
+    <view class="box1-3" style="white-space:nowrap;color:rgb(128,128,128);font-size:25rpx;margin-top:26px">举报</view>
+  </view>
+   <!-- 第二框内容 -->
+  <view class="box2">求助类别：乡村振兴</view>
+  <view class="box2">图片素材:
+    
+      <image src="{{tasklist1.pic}}" style="width:90%;height:100%"></image>
+      <image src="{{tasklist1.pic}}" style="width:90%;height:100%"></image>
+      <image src="{{tasklist1.pic}}" style="width:90%;height:100%"></image>
+  </view>
+  <view class="box2">时间限制: {{taskinner.endtime}}</view>
+
+  <!-- 第三框内容 -->
+  <view class="box3" bindtap="bindbox3">
+    <view>求助详情：</view>
+    <view>{{taskinner.content}}</view></view>
+    <!-- 第四框内容:已完成的页面 -->
+    <view class="box4" wx:if="{{(taskinner.status)===5}}" >
+    <view class="box4-1">
+     <view class='cir1'></view>
+     <view class="line1"></view>
+     <cover-view class="cir2"></cover-view>
+     <view class="line2"></view>
+     <view class="cir3"></view>
+    </view>
+   <view class="box4-2">
+     <view>已接受</view>
+     <view>正在制作</view>
+     <view>完成</view>
+   </view>
+    <!-- <button class="bt"  bindtap="swithtoback"  >已完成</button> -->
+    <toast hidden="{{status}}" duration="3000" bindchange="toastHide">
+        您已经完成此任务！
+    </toast>
+  </view>
+  <!--第四框内容: 未完成的页面 -->
+  <!-- //:elif="{{(taskinner.status)==3}}" -->
+  <view class="box4" wx:else >
+    <view class="box4-1">
+     <view class='cir1'></view>
+     <view class="line1"></view>
+     <view class="cir2"></view>
+     <cover-view class="line2-n"></cover-view>
+     <view class="cir3-n"></view>
+    </view>
+   <view class="box4-2">
+     <view>已接受</view>
+     <view>正在制作</view>
+     <view>完成</view>
+   </view>
+    <!-- <buttom class="bt" bindtap="swithtopush" data-fi="1" >提交作品</buttom> -->
+  </view>
+
+</view>
+
+<view><modal cancel-text="关闭" confirm-text="确定"
+    hidden="{{see}}" bindconfirm="c" bindcancel="m"><view>"{{taskinner.content}}"</view></modal></view>

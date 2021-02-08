@@ -1,0 +1,224 @@
+/* pages/task/t.wxss */
+/* 第一个内容 */
+
+.box1{
+  height: 375rpx;
+  background-color: rgb(255, 255, 255);
+  border-bottom:3rpx solid rgb(192, 192, 192);
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 3rpx;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;
+}
+/* 头像框 */
+.box1-1{
+  height: 154rpx;
+  width: 154rpx;
+  border-radius: 77rpx;
+  background-color: rgb(170, 170, 170);
+  margin-left: 58rpx;
+  margin-top:55rpx;
+  letter-spacing: 3rpx;
+}
+/* 第二列 */
+.box1-2{
+  width: 400rpx;
+  margin-left: 50rpx;
+  letter-spacing: 3rpx;
+}
+/* 名字 */
+.bname{
+  display: flex;
+  flex-direction: row;
+  margin-top:60rpx;
+  font-weight: 550;
+  font-size: 33rpx;
+  letter-spacing: 3rpx;
+}
+/* 私聊 */
+.bname view {
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 50rpx;
+  letter-spacing: 3rpx;
+  font-weight: 400;
+  margin-left: 9rpx;
+}
+/* ID地点积分 */
+.boxq{
+  margin-top:17rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  letter-spacing: 3rpx;
+  font-size: 27rpx;
+  font-family: "Microsoft YaHei", "Arial","黑体","宋体",sans-serif;
+}
+/* 标题 */
+.btitle{
+ margin-top:20rpx;
+ font-size: 28rpx;
+ font-weight: 400;
+ letter-spacing: 3rpx;
+}
+
+.box2{
+  height: 100rpx;
+  background-color: rgb(255, 255, 255);
+  border-bottom:3rpx solid rgb(201, 195, 195);
+  display: flex;
+  padding-left: 80rpx;
+  flex-direction: row;
+  align-items: center;
+  font-size: 33rpx;
+  text-indent:20rpx;
+  letter-spacing: 3rpx;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;
+  white-space: nowrap;
+}
+.p{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left:15rpx;
+}
+.box3{
+  display: flex;
+  flex-direction: row;
+  height: 180rpx;
+  font-size: 33rpx;
+  padding-left: 80rpx;
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 3rpx;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;
+}
+.box3 :nth-child(1){
+  margin-top:15rpx;
+  margin-left:13rpx;
+  font-size:33rpx ;
+  width:180rpx;
+  letter-spacing: 3rpx;
+}
+.box3 :nth-child(2){
+  margin-top:15rpx;
+  font-size:33rpx ;
+  width:400rpx;
+  height: 180rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  letter-spacing: 3rpx;
+}
+.box4{
+  height:380rpx;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3rpx;
+  z-index: 1;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;
+}
+.box4 .box4-1{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 3rpx;
+}
+.box4  .cir1{
+  height: 34rpx;
+  width: 34rpx;
+  border-radius: 17rpx;
+  
+  margin-left:100rpx;
+  background-color: rgb(251, 184, 113);
+  letter-spacing: 3rpx;
+}
+.box4  .line1{
+  height: 15rpx;
+  width: 242rpx;
+  margin-left: -10rpx;
+  margin-top:10rpx;
+  border-radius: rpx;
+  background-color: rgb(251, 184, 113);
+
+}
+.box4  .cir2{
+  height: 34rpx;
+  margin-left: -2rpx;
+  width: 34rpx;
+  border-radius: 17rpx;
+  background-color: rgb(251, 184, 113);
+  z-index: 2;
+}
+.box4  .line2{
+  height: 15rpx;
+  width: 242rpx;
+  margin-left: -1rpx;
+  margin-top:10rpx;
+  border-radius: rpx;
+  background-color: rgb(251, 184, 113);
+}
+.box4  .cir3{
+  height: 34rpx;
+  margin-left: -3rpx;
+  width: 34rpx;
+  border-radius: 17rpx;
+  background-color: rgb(251, 184, 113);
+}
+.box4  .line2-n{
+  height: 15rpx;
+  width: 242rpx;
+  margin-left: -3rpx;
+  margin-top:10rpx;
+
+  border-radius: rpx;
+  background-color: rgb(153, 153, 153);
+}
+.box4  .cir3-n{
+  height: 34rpx;
+  margin-left: -3rpx;
+  width: 34rpx;
+  border-radius: 17rpx;
+  background-color: rgb(153, 153, 153);
+}
+.box4-2{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;
+
+}
+.box4-2 view:nth-child(1){
+  margin-left: 70rpx;
+  width:120rpx;
+}
+.box4-2 view:nth-child(2){
+ width:140rpx;
+ margin-left:130rpx;
+}
+.box4-2 view:nth-child(3){
+width: 100rpx;
+margin-left:150rpx;
+}
+.box4 .bt{
+  width:300rpx;
+  height: 103rpx;
+  border-radius: 16rpx;
+  margin-top:200rpx;
+  font-weight: 300;
+  font-size: 44rpx;
+  line-height: 103rpx;
+  color: white;
+  text-align: center;
+  background-color: rgb(251, 184, 113);
+  margin-left: 225rpx;
+  letter-spacing: 5rpx;
+}
+
+view modal{
+  letter-spacing: 3rpx;
+  text-indent: 1em;
+  font-size: 40rpx;
+}

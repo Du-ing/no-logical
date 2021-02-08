@@ -1,0 +1,422 @@
+/**index.wxss**/
+/*  */
+.message{
+  display:flex;
+  width:750rpx;
+  height:320rpx;
+  flex-direction: column;
+  border:3rpx rgb(192, 192, 192) solid;
+}
+
+
+.tmessage{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height:230rpx;
+}
+.tmessage .head{
+  width: 152rpx;
+  height: 152rpx;
+  border-radius:74rpx;
+  margin-left: 54rpx;
+  margin-top: 55rpx;
+  display: flex;
+}
+
+
+.mamsg{
+ width:390rpx;
+ margin-left: 30rpx;
+}
+/* 关注和粉丝 */
+.l1{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  font-weight: 500;
+  letter-spacing: 5rpx;
+}
+/* 数字样式 */
+.f1{
+  margin-top: 55rpx;
+  font-weight: 900;
+
+}
+.f2{
+  margin-top: 55rpx;
+  font-weight: 900;
+  padding-left:40rpx;
+}
+.addmore{
+  margin-top:40rpx;
+  margin-left:30rpx;
+}
+/* 文字 */
+.focus{
+  display: flex;
+  margin-top: 55rpx;
+}
+.fans{
+  display: flex;
+  margin-top: 55rpx;
+}
+/* 男位置 职业 */
+.l2{
+  display: flex;
+  flex-direction: row;
+  margin-top:13rpx;
+  flex-wrap: wrap;
+  font-size: 20rpx;
+  color:rgb(127,127,127);
+}
+.login{
+  color: white;
+  background-color: rgb(250, 176, 91);
+  margin-left:10rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  letter-spacing: 4rpx;
+  width:200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+  
+}
+
+.sex{
+  flex-direction: row;
+  font-size: 17rpx;
+  height: 36rpx;
+  width: 86rpx;
+  line-height: 36rpx;
+  font-weight: 550;
+  border-radius: 18rpx;
+  color:rgb(32, 142, 255);
+  text-align: center;
+  letter-spacing: 3rpx;
+  background-color: rgb(203, 228, 253);
+}
+.sex2{
+  font-weight: 550;
+  flex-direction: row;
+  font-size: 17rpx;
+  height: 36rpx;
+  width: 86rpx;
+  line-height: 36rpx;
+  border-radius: 18rpx;
+  color:rgb(255, 90, 141);
+  text-align: center;
+  letter-spacing: 3rpx;
+  background-color: rgb(255, 238, 243);
+}
+
+#addmessage{
+  height: 36rpx;
+  width: 36rpx;
+  color: white;
+  background-color: rgb(255, 159, 80);
+  border-radius: 18rpx;
+  margin-left:30rpx;
+  font-weight: 550;
+  text-align: center;
+}
+/* 用户id */
+.iden{
+  margin-top: 22rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  letter-spacing: 3rpx;
+}
+/* 位置标签和职业标签 */
+.label{
+  text-align: center;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-left: 0rpx;
+  letter-spacing: 3rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.label view{
+  padding-left: 4rpx;
+}
+.label2{
+  text-align: center;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-left: 20rpx;
+  letter-spacing: 3rpx;
+}
+.sev{
+  width:50rpx;
+  margin-top: 15rpx;
+  margin-left:0rpx;
+  font-size: 12rpx;
+  text-align: center;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.set{
+  width:50rpx;
+  text-indent: 6em;
+  font-size: 12rpx;
+  margin-top: 15rpx;
+  margin-right:20rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* 下面页面内容 */
+.bmessage{
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  font-size: 27rpx;
+}
+
+/* 消息 */
+.t{
+  margin-top:5rpx;
+  margin-left: 20rpx;
+}
+.t1{
+  margin-left: 15rpx;
+  margin-top:5rpx;
+}
+.mark{
+  margin-left: 20rpx;
+  margin-top:5rpx;
+}
+.mark1{
+  margin-left:9rpx;
+  margin-top:5rpx;
+}
+/* 创作中固定按钮 */
+.workv .hbtn{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 75px;
+right: 10px;
+}
+ .workv .hbtn2{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 25px;
+right: 10px;
+display: flex;
+}
+
+/* 喜欢中固定按钮 */
+.likev .hbtn{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 75px;
+right: 10px;
+}
+ .likev .hbtn2{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 25px;
+right: 10px;
+display: flex;
+}
+
+.main{
+  width:750rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 任务单 */
+.menu{
+  margin-left: 70rpx;
+  width:610rpx;
+  letter-spacing: 5rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 86rpx;
+  /* background-color: pink; */
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+.menu view{
+  margin-top:20rpx;
+  color:rgb(128, 128, 128);
+  font-size:30rpx;
+  text-align: center;
+  width: 120rpx;
+ }
+ .bu{
+  border-bottom: 10rpx solid rgb(249, 184, 111);
+  border-bottom-style: 2rpx;
+  border-radius: 10rpx;
+ }
+ .workv{
+   margin-top:2rpx;
+    display: flex;
+    flex-direction: row;
+    border-top: 2rpx solid rgb(209, 209, 209) ;
+    width: 100%;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+ }
+ .workv .box1{
+  border-width: 20rpx;
+  border:10rpx rgb(227, 227, 227) solid;
+  height:320rpx;
+  margin:0rpx;
+  width:230rpx;
+  border-collapse: collapse;
+ }
+ .likev{
+    margin-top:2rpx;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 3rpx solid rgb(209, 209, 209) ;
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: flex-start;
+}
+.likev .box2{
+  border-width: 20rpx;
+  border:10rpx rgb(227, 227, 227) solid;
+  height:320rpx;
+  margin:0rpx;
+  width:230rpx;
+  border-collapse: collapse;
+ }
+.mov{
+  border-top: 5rpx  rgb(209, 209, 209) solid;
+  display: flex;
+  flex-direction: column;
+
+}
+.mov .ta{
+  display: flex;
+  flex-direction: row;
+
+  border-bottom: 4rpx  rgb(209, 209, 209) dashed ;
+  height: 260rpx;
+  align-items: center;
+}
+.mov .ta .tleft{
+  display: flex;
+  flex-direction: column;
+  margin-left:54rpx;
+  width:380rpx
+}
+.mov .ta .s{
+  margin-left:160rpx;
+  font-size: 35rpx;
+  font-weight: 500;
+}
+.mov .ta .tleft .tleft-b{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 20rpx;
+  width:750rpx;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top:35rpx;
+  color:rgb(142, 142, 142);
+  letter-spacing: 3rpx;
+}
+.mov .ta .tleft .da{
+  margin-top:40rpx;
+  letter-spacing: 3rpx;
+  font-weight: 800;
+  font-size: 24rpx;
+}
+.mov .ta .tleft .ti{
+  margin-top:20rpx;
+  letter-spacing:5rpx;
+  font-size: 27rpx;
+} 
+.mov .ta .tleft .tleft-b view{
+  margin-top: 10rpx;
+}
+.taskhead{
+  width:60rpx;
+  height:60rpx;
+}
+.over{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 75px;
+right: 10px;
+}
+.over1{
+  position: fixed;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:white;
+  border: 3rpx solid rgb(247, 247, 248);
+	border-radius: 50%;
+	padding: 10rpx;
+  bottom: 25px;
+right: 10px;
+}
+
+.overtext1{
+  margin-top: -2px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.overtext{
+  margin-top: -2px;
+  margin-left:3px;
+  width: 29px;
+  height: 29px;
+}
+.overtext3{
+  font-size: 8px;
+  margin-top: -5px;
+  margin-left: 9px;
+}
+

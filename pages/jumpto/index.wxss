@@ -1,0 +1,295 @@
+/* pages/jumpto/index.wxss */
+.page{
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+.im{
+  width: 100%;
+  height: 880rpx;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+ 
+}
+ 
+.ball2{
+  background-color: rgba(0, 0, 0, 0.103);
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball1 {
+  background-color: rgba(0, 0, 0, 0.103);
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+ 
+.videoplay {
+  width: 160rpx;
+  height: 160rpx;
+  z-index: 100;
+  position: absolute;
+  left: 300rpx;
+  top: 40%
+}
+ 
+ .head{
+   display: flex;
+   width: 100%;
+ }
+ .foc{
+   width: 160rpx;
+   height: 70rpx;
+   margin-left:320rpx;
+ }
+
+ 
+.head_img {
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 5rpx #fff solid;
+}
+.jia{
+  margin-top: 20rpx;
+  margin-left: 6rpx;
+color:black;
+font-size: 30rpx;
+}
+.head_font{
+  line-height: 120%;
+  display: flex;
+  font-size: 26rpx;
+  margin-left: 34rpx;
+  width: 660rpx;
+}
+.head_con{
+  white-space: pre-line;
+}
+.head_time{
+  font-size: 20rpx;
+  color: #bbb;
+  margin-left: 34rpx;
+  margin-top: 6rpx;
+}
+.head_pic{
+  display: flex;
+  margin-left: 34rpx;
+  margin-top: 30rpx;
+}
+.letter{
+  width: 54rpx;
+  height: 44rpx;
+}
+.share{
+  width: 54rpx;
+  height: 44rpx;
+  margin-left: 30rpx;
+}
+.comm{
+  width: 54rpx;
+  height: 44rpx;
+  margin-left: 360rpx;
+}
+.loved{
+  width: 54rpx;
+  height: 44rpx;
+  margin-left: 30rpx;
+}
+.love_img {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  right: 40rpx;
+  top: 150rpx;
+}
+.comment_img {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  right: 37rpx;
+  top: 260rpx;
+}
+.comment_num {
+  position: absolute;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  top: 520rpx;
+}
+.comment__button{
+    width: 60rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: rgba(3, 2, 2, 0);
+  top: 30rpx;
+}
+button::after {
+  border: none;
+}
+ 
+ 
+/* 评论弹出层样式 */
+ 
+.commodity_screen {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+ 
+/*对话框 */
+ 
+.commodity_attr_box {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-bottom: 60rpx;
+}
+ 
+/* 评论区 */
+ 
+.down {
+  width: 46rpx;
+  height: 46rpx;
+  float:right;
+}
+
+.comm-de{
+  width: 8rpx;
+  height:42rpx;
+  background-color:  rgb(252, 191, 80);
+  margin-top: 4rpx;
+  margin-right: 20rpx;
+}
+.comm-ti{
+  margin-top: 10rpx;
+}
+
+.commentTitle {
+  display: flex;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  font-weight: 550;
+}
+ 
+.commentTitle .img {
+  width: 36rpx; 
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+ 
+.commentContent {
+  display: flex;
+  width: 90%;
+  margin: 0 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+ 
+.contentLeft {
+  margin-left: 60rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+ 
+.Comment {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  word-break:break-all;
+}
+ 
+.commentInput {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  height: 80rpx
+}
+ 
+.input_box {
+  width: 75%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 8rpx;
+  padding-left: 10rpx;
+  background: #fff;
+  border: 1rpx solid #f3f3f3;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+ 
+.comment_btn {
+  font-size: 28rpx;
+  float: right;
+  width: 20%;
+  border-radius: 10rpx;
+  height: 60rpx;
+  margin: 10rpx 0;
+  line-height: 60rpx;
+  background: #dedede;
+}
+
+.divLine{
+  background: #E0E3DA;
+  margin-top: 10rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 2rpx;
+ }
+ .comm-pic{
+   height: 64rpx;
+   width: 64rpx;
+   border-radius: 50%;
+   margin-top: 10rpx;
+ }
+ .com-love{
+   margin-left: 220rpx;
+   font-size: 7px;
+   margin-top: 32rpx;
+   width: 20%;
+ }
+ .com-love-pic{
+   height:36rpx ;
+   width: 60rpx;
+ }
+ .com-love-text{
+margin-left: 16rpx;
+}
+.comment_txt{
+  margin-bottom: 100rpx;
+}
